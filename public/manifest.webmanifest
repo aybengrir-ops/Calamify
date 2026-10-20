@@ -1,0 +1,35 @@
+{
+  "name": "Calamify — Your Universe of Music",
+  "short_name": "Calamify",
+  "description": "Search any song in the universe and stream it full-length. Space-themed glassmorphism music streaming PWA.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#05060f",
+  "theme_color": "#7b2ff7",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["music", "entertainment"],
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Search the universe", "url": "/search", "description": "Jump straight into search" },
+    { "name": "Explore genres", "url": "/explore", "description": "Browse 45+ cosmic genres" },
+    { "name": "Your library", "url": "/library", "description": "Liked songs, playlists, history" }
+  ]
+}
