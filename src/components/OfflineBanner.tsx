@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 
-export default function OfflineBanner() {
+export function OfflineBanner() {
   const [mounted, setMounted] = useState(false);
   const [isOffline, setIsOffline] = useState(false);
 
@@ -29,7 +29,6 @@ export default function OfflineBanner() {
     };
   }, []);
 
-  // Safe check for Next.js SSR hydration
   if (!mounted || !isOffline) {
     return null;
   }
@@ -43,3 +42,6 @@ export default function OfflineBanner() {
     </div>
   );
 }
+
+// Export default & named export باش يخدم ف كاع الحالات
+export default OfflineBanner;
