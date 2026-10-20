@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 
-export function OfflineBanner() {
+export const OfflineBanner = () => {
   const [mounted, setMounted] = useState(false);
   const [isOffline, setIsOffline] = useState(false);
 
@@ -41,7 +41,6 @@ export function OfflineBanner() {
       </div>
     </div>
   );
-}
+};
 
-// Export default & named export باش يخدم ف كاع الحالات
 export default OfflineBanner;

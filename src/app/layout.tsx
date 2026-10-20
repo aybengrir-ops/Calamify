@@ -17,7 +17,7 @@ import { Toasts } from "@/components/Toasts";
 import { AuthModal, AddToPlaylistDialog, CreatePlaylistDialog } from "@/components/Dialogs";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://calamify.com"),
+  metadataBase: new URL("https://calamifyy.vercel.app"),
   title: {
     default: "Calamify — Your Universe of Music",
     template: "%s · Calamify",
