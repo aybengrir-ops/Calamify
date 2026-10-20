@@ -9,3 +9,6 @@ public/calamify-source.zip
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store
+
+.vercel
+.env*

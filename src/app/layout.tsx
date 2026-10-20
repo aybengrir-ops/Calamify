@@ -5,7 +5,7 @@ import { Starfield } from "@/components/Starfield";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { AppShell } from "@/components/AppShell";
 import { SoundEffectsProvider } from "@/components/SoundEffectsProvider";
-import OfflineBanner from "@/components/OfflineBanner";
+import { OfflineBanner } from "@/components/OfflineBanner";
 import { Splash } from "@/components/Splash";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";

@@ -8,7 +8,7 @@ import { SectionTitle, GlassBadge } from "@/components/ui/Glass";
 const PILLARS = [
   { icon: <Waves className="h-5 w-5" />, title: "Full-length, always", body: "No 30-second previews. Tracks stream from the first sample to the final fade-out — 3 minutes or 13, whatever the real duration is." },
   { icon: <Zap className="h-5 w-5" />, title: "Instant start", body: "The top three results are warmed in the background while you browse, and an 8-second watchdog re-routes the stream if anything stalls." },
-  { icon: <ShieldCheck className="h-5 w-5" />, title: "Zero CORS drama", body: "Your browser only ever talks to calamify.com/api/audio. Our server fetches upstream and pipes the bytes through, so nothing is blocked." },
+  { icon: <ShieldCheck className="h-5 w-5" />, title: "Zero CORS drama", body: "Your browser only ever talks to calamifyy.vercel.app/api/audio. Our server fetches upstream and pipes the bytes through, so nothing is blocked." },
   { icon: <Cpu className="h-5 w-5" />, title: "Innertube only", body: "youtubei.js speaks YouTube's own internal API — the same one the mobile app uses. No yt-dlp, no Piped, no Invidious to break next week." },
   { icon: <Radio className="h-5 w-5" />, title: "Endless radio", body: "Seed a radio from any song, artist or genre and Calamify keeps queuing similar tracks seamlessly." },
   { icon: <Sparkles className="h-5 w-5" />, title: "Installable PWA", body: "Add Calamify to your home screen on iOS or Android, download tracks for offline listening, and control playback from the lock screen." },
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <SectionTitle eyebrow="How it works" title="The audio engine" subtitle="Browser → Calamify server → upstream provider. Never the other way around." />
         <div className="glass-strong space-y-4 p-6">
           <pre className="no-scrollbar overflow-x-auto rounded-2xl border border-white/10 bg-black/40 p-4 text-[11.5px] leading-relaxed text-cyan-100/80">{`User's browser
-   │   audio.src = "https://calamify.com/api/audio/{songId}"
+  │   audio.src = "https://calamifyy.vercel.app/api/audio/{songId}"
    ▼
 Calamify backend (Node.js + youtubei.js)
    │   1. Innertube.getInfo(videoId)
